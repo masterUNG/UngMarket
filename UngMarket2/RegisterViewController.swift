@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RegisterViewController.swift
 //  UngMarket2
 //
 //  Created by MasterUNG on 16/4/2562 BE.
@@ -8,25 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }   // Main Method
     
     
-    
-    @IBAction func registerButton(_ sender: UIButton) {
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
         
-        print("You Click Register")
-        performSegue(withIdentifier: "GoToRegister", sender: nil)
+        performSegue(withIdentifier: "BackToAuthen", sender: nil)
         
-    }   // registerButton
+    }
     
+    
+    
+    
+    @IBAction func uploadButton(_ sender: UIBarButtonItem) {
+    }
     
     
 
 
 }   // Main Class
-
